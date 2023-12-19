@@ -20,7 +20,6 @@
       text-decoration: none;
       text-transform: none;
       letter-spacing: normal;
-      line-height: 1.55;
       color: var(--dl-color-gray-900);
       background-color: var(--dl-color-gray-white);
 
@@ -36,27 +35,23 @@
   <link href="./index.css" rel="stylesheet" />
 </head>
 
-<body>
+<body id="HomeLanding" class="HomeBody">
   <header class="app-bar" id="header">
     <nav id="navHome">
-      <div class="nav-title" tabindex="0">
-        <img src="./public/logo-mandoor.png" id="logo" alt="BrandBiz Logo" />
-        <span>Mandoor-App</span>
+      <div class="nav-title page-scroll" tabindex="0">
+        <img src="./public/logo-mandoor.png" id="logo" alt="Mandoor Logo" />
+        <a href="#HomeBody">Mandoor-App</a>
       </div>
       <button id="hamburgerButtonHome">☰</button>
       <div id="navigationDrawerHome" class="nav-list">
-        <li class="listnav"><a href="#/" id="home">Home</a></li>
-        <li class="listnav"><a href="#/news" id="news">About</a></li>
-        <li class="listnav"><a href="#/about" id="about">Joins</a></li>
+        <li class="listnav "><a href="#HomeLanding" id="home" class="page-scroll">Home</a></li>
+        <li class="listnav"><a href="#AboutLanding" id="news" class="page-scroll">About</a></li>
+        <li class="listnav"><a href="#JoinsLanding" id="about" class="page-scroll">Joins</a></li>
+        <li class="listnav"><a href="#ContactLanding" id="contact" class="page-scroll">Contact</a></li>
       </div>
     </nav>
   </header>
-  <div class="profile-container">
-    <div data-role="Header" class="profile-header-container">
-      <header class="profile-header">
-
-      </header>
-    </div>
+  <div class="profile-container" id="profile-container">
     <div class="profile-main">
       <div class="profile-blur-background"></div>
 
@@ -86,7 +81,7 @@
         <img alt="image" src="public/oneplus%2010t-1500h.png" image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
           class="profile-image2" />
       </div>
-      <div class="profile-container14">
+      <div class="profile-container14" id="AboutLanding">
         <h3 class="Headline3">About Mandoor</h3>
         <span class="profile-text12">
           Mandoor to be a solution to a problem that encounters many people
@@ -133,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="section-fitures">
+    <div class="section-fitures" id="JoinsLanding">
       <h1>Joins Mandoor</h1>
       <div class="fitures">
         <div class="card">
@@ -161,7 +156,7 @@
       </div>
     </div>
     <div class="section-area">
-      <div class="footer-container">
+      <div class="footer-container" id="ContactLanding">
         <div class="footer-left-side">
           <div class="footer-logo">
             <img src="./public/logo-mandoor.png" alt="" />
@@ -206,10 +201,9 @@
       </div>
     </div>
     <div class="profile-footer">
-        <span class="profile-text19 Body2">© 2023 Mandoor || Capstone Bangkit Teams CH2-PS300</span>
+        <span class="profile-text19 Body2">© 2023 Mandoor || Bangkit Teams CH2-PS300</span>
     </div>
   </div>
-
   <script src="./javascript/index.js"></script>
 </body>
 

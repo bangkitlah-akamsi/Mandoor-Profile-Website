@@ -20,7 +20,6 @@
   margin-top: -20px;
   font-weight: 900;
   margin-bottom: -20px;
-  letter-spacing: -20px;
 }
 .not-found-container2 {
   width: 421px;
@@ -32,4 +31,20 @@
 .not-found-text2 {
   text-align: center;
   font-weight: 400;
+}
+
+
+@media(max-width: 479px) {
+  .not-found-container{
+    font-size: 20pt;
+  }
+
+  .not-found-container1 h1{
+    font-size: 100pt;
+  }
+  
+  .not-found-text2{
+    width: 70%;
+    font-size: 20pt;
+  }
 }
