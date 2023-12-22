@@ -73,6 +73,23 @@ linkLogo.addEventListener("click", function (event) {
   });
 });
 
+function redirect(url) {
+  // Menggunakan metode window.location.replace untuk mengganti URL saat ini dengan URL yang diberikan
+  window.open(url, '_blank');
+}
+
+const buttonOrange = document.querySelectorAll('a.orange-link');
+buttonOrange.forEach(function (each) {
+  each.onclick = function () {
+    // Mengambil nilai atribut href dari elemen a
+    let href = each.getAttribute("href");
+    // Memanggil fungsi redirect dengan parameter href
+    redirect(href);
+    // Menghentikan perilaku default dari elemen a
+    return false;
+  }
+});
+
 window.addEventListener('hashchange', () => {
 });
 

@@ -1,6 +1,7 @@
 .primary-button-container {
   display: flex;
-  /* position: relative; */
+  position: relative;
+  z-indes: -1;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +73,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: -1;
 }
 .profile-container01 {
   border: 2px dashed rgba(120, 120, 120, 0.4);
@@ -377,7 +379,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 2rem;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .profile-blur-background {
   /* top: 0px; */
@@ -738,6 +740,7 @@ nav{
   top: 0;
   background-color: white;
   width: 100%;
+  z-index: 99;
 }
  
 
@@ -846,6 +849,7 @@ border-bottom: 1px solid #fab142;
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
 }
 
 .commingsoon-link{
